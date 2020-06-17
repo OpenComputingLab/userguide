@@ -17,16 +17,31 @@ jupyter:
 ---
 
 
-### Accessing RoboLab Online - MyBinder / BinderHub
+### Accessing Open Computing Lab Ennvironments Online - MyBinder / BinderHub
 
-You can run the RoboLab environment online using the MyBinder service [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/innovationOUtside/tm129-robotics2020/master).
+You can access *Open Computing Lab* environments online using the [MyBinder](https://mybinder.org/) service.
+
+Open COmputing Lab environment homepages will typically have a Binder button displayed on them:
+ ![Binder](https://mybinder.org/badge_logo.svg)
+
+Clicking such a button will launch a temporary / transient version of the environment for you on a third party server.
+
+You can launch your own environments from the MyBinder home page — https://mybinder.org — uding the web address / URL of an Open Computing Lab Github repository.
+
+For example, given the web location of the repository `https://github.com/innovationOUtside/tm129-robotics2020/`, we can enter that into the form on the MyBinder launch page:
+
+![](.images/Binder_launch.png)
+
+Clicking the launch button will the build the environment from the repository contents if a prebuilt image of the environment is not already available, and then launch the environment. (Note, this may take a few minutes if the environment needs ot be built from scratch.)
+
+### Saving Files Used On MyBinder
 
 If you want to save any of the notebooks used there, you will have to download them as follows:
 
 - as a single notebook from the notebook page `File` menu;
 - as a zipped archive file of all notebooks using the the download button on the notebook homepage.
 
-You can also upload your own notebooks from the notebook homepage either individually, or as a zip file. If you upload a zip file, you will need to unzip it. You can do this from a notebook command cell using the `unzip` shell command or [using Python code](https://thispointer.com/python-how-to-unzip-a-file-extract-single-multiple-or-all-files-from-a-zip-archive/). More details can be found in the __TO DO?? - see the `RoboLab Environment FAQ`__
+You can also upload your own notebooks from the notebook homepage either individually, or as a zip file. If you upload a zip file, you will need to unzip it. You can do this from a notebook command cell using the `unzip` shell command or [using Python code](https://thispointer.com/python-how-to-unzip-a-file-extract-single-multiple-or-all-files-from-a-zip-archive/). 
 
 The environment launched from MyBinder is ephemeral - it is created on demand when you click a `launch binder` button and is destroyed after a short period of inactivity.
 
@@ -53,15 +68,5 @@ Note also that you save the file to the storage associated with a particular bro
 
 __TO CHECK: does file storage synch across logged in instances of Chrome?__ 
 
-##### Downloading and Uploading Files
-
-Another way of saving files is to download them to your own computer desktop and then upload then when you want to work on them again. The *Download* button will download the current notebook to you desktop. You can then upload a notebook saved to your desktop using the *Upload* button on the notebook server home page.
-
-![](.images/jupyter_notebook_upload.png)
-
-The "down" arrow button on the top right-hand side notebook homepage will zip and download *all* the files in the notebook listing, including all the files in any subdirectories / subfolders.
-
-Alternatively, if you check a single file from the notebook homepage, you can choose to selectively download just that file by clicking the *Download* button from that is displayed when you check the item.
-
-![](.images/jupyter_select_download.png)
+See also the section *Downloading and Uploading Files* in `saving_and_checkpointing_work.md`.
 

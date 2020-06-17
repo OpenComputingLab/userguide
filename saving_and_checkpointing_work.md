@@ -16,7 +16,7 @@ jupyter:
     scroll: true
 ---
 
-### Saving and Checkpointing Your Work
+## Saving and Checkpointing Your Work
 
 Within the notebook environment, the file will be saved automatically every 120 seconds (which is to say, every two minutes).
 
@@ -46,4 +46,35 @@ What this means is that if you work on a file, allowing it to be autosaved, and 
 
 Note that this will throw away all changes made to the autosaved version of the notebook since the last manual (checkpointing) save, so use this command with care.
 
+*See also `synchronising_desktop_and_docker_files.md`.*
 
+## Downloading and Uploading Files
+
+Another way of saving files is to __download__ them to your own computer desktop and then upload then when you want to work on them again. The *Download* button will download the current notebook to you desktop. You can then upload a notebook saved to your desktop using the *Upload* button on the notebook server home page.
+
+![](.images/jupyter_notebook_upload.png)
+
+The "down" arrow button on the top right-hand side notebook homepage will zip and download *all* the files in the notebook listing, including all the files in any subdirectories / subfolders.
+
+Alternatively, if you check a single file from the notebook homepage, you can choose to selectively download just that file by clicking the *Download* button from that is displayed when you check the item.
+
+![](.images/jupyter_select_download.png)
+
+
+You can __upload__ files via any notebook server homepage. Simply click on the upload button and select the file you want to upload:
+
+![](../images/jupyter_upload.png)
+
+If you upload a `.zip` file, you will need to unzip it.
+
+From the notebook homepage `Open` menu, open a new terminal.
+
+Optionally, enter the command `ls` and hit return to list the files in the current directory and check the file name. To unzip your uploaded file, for example `upload.zip`, run the command:
+
+`unzip upload.zip`
+
+
+
+## Backing Up Work on `MyBinder`
+
+If you are working on `MyBinder`, which is ordinarily a transient environment with no mechanism for saving files, you can save and retrieve notebooks using your web browser's local storage mechanism. See the *Using Browser Storage* section in `using_mybinder.md` for more details. 
